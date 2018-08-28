@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* CSS gerais */
+
+.header {
+  border-left: 5px solid blue;
+}
+
+hr {
+  width: 50%;
+  margin-right: 50%;
+}
+
+.table-wrapper .row {
+  width: 100%;
+}
+
+/* CSS das tabelas */
+
+.table-wrapper {
+  display: block;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table {
+  table-layout: fixed !important;
+  overflow-x: hidden !important;
+  align-items: center !important;
+}
+
+/* CSS do Nav Tabs */
+
+#navtabs {
+  order: 3;
+  width: calc(100% - 250px);
+  height: calc(100% - 50px);
+  overflow: auto;
+}
+
+.card {
+  width: 80%;
+  margin: 5% 10% 5% 10%;
+}
+
+#cadMenuInicial {
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+#cadastroForm {
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.formTitle {
+    border-left: 7px solid blue;
+    padding-left: 2%;
+}
+
+#navtabs nav {
+  width: 96%;
+  margin: 2%;
+}
+
+#navtabs nav ul li .nav-link.active {
+  background-color: rgba(0,0,0,.2);
+}
+
+/* CSS do Nav superior */
+
+#topnav {
+  height: 50px;
+  width: 100%;
+  background-color: #f5f5f0;
+  order: 1;
+  outline-width: 0;
+  box-shadow: 10px 0 10px 4px rgba(0,0,0,.12);
+}
+
+#topnav ul li:last-child {
+  width: 12%;
+  margin-left: 5%;
+  margin-top: .5%;
+}
+
+#topnav ul li img {
+  width: 100%;
+}
+
+#topnav ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#topnav li {
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#topnav #dropdown {
+  display: inline-block;
+}
+
+#navdropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+#navdropdown a {
+  display: block;
+  text-align: left;
+}
+
+#dropdown:hover #navdropdown {
+    display: block;
+    right: 1%;
+}
+
+/* CSS do Sidenav */
+
+#sidenav {
+  order: 2;
+  width: 250px;
+  height: calc(100% - 50px);
+  text-align: center;
+  background-color: #f5f5f0;
+  box-shadow: 0 10px 10px 4px rgba(0,0,0,.12);
+  outline-width: 0;
+}
+
+#sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  text-align: left;
+}
+
+#sidenav ul {
+  list-style-type: none;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+#sidenav a:hover {
+  background-color: silver;
+}
+
+#sidenav ul li div {
+  display: none;
+  margin-left: 9%;
+  overflow: auto;
+}
+
+ #formUnid, #formPC, #formFat, #formHor {
+   display: none;
+ }
+
+ /* CSS dos inputs e Labels*/
+
+ .active {
+   top: 1.0rem !important;
+ }
+
+ #sexoForm {
+   color: #757575;
+   margin-left: 82px !important;
+ }
+
+ .form-check-label {
+   padding-left: 24px !important;
+   margin-left: 5px;
+   color: #757575;
+ }
+
+ #colunaSexo {
+   width: 200px !important;
+ }
+
+ #colunaIdade {
+   width: 100px !important;
+ }
+
+ input {
+   padding-bottom: 2px !important;
+ }
