@@ -1,8 +1,10 @@
-$(document).ready(function(){
+$(document).ready(function(){     
 
+    // Inicialização do DATATable do MDB 
     $('.table').DataTable();
     $('.dataTables_length').addClass('bs-select');
 
+    // Escondendo as telas do menu
     $('#cadastroMenu').hide();
     $('#funcionariosTable').hide();
     $('#funcoesTable').hide();
@@ -12,7 +14,8 @@ $(document).ready(function(){
     $('#segTable').hide();
     $('#medicinaTable').hide();
     $('#atendimentoTable').hide();
-  
+
+    // Mostrando os links mais interiores dos links do sidenav
     $('a').click(function(){
       var hide = $('#sidenav > ul > li > div').css('display','none');
       if (this.id == "home"){
@@ -37,6 +40,7 @@ $(document).ready(function(){
       }
     });
 
+    // Manipulação das telas dentro do NavTab
     $('#home').click(function() {
       $('#atendimentoTable').hide();
       $('#medicinaTable').hide();
@@ -49,7 +53,8 @@ $(document).ready(function(){
       $('#cadastroMenu').hide();
       $('#cadastroMenuInicial').show();
     });
-  
+    
+    // Manipulação das telas dentro do NavTab
     $('#minhaEmpresa').click(function() {
       $('#atendimentoTable').hide();
       $('#medicinaTable').hide();
@@ -63,6 +68,7 @@ $(document).ready(function(){
       $('#cadastroMenu').show();
     });
 
+     // Manipulação das telas dentro do NavTab 
     $('#funcionarios').click(function() {
       $('#atendimentoTable').hide();
       $('#medicinaTable').hide();
@@ -76,6 +82,7 @@ $(document).ready(function(){
       $('#funcionariosTable').show();
     });
 
+    // Manipulação das telas dentro do NavTab
     $('#funcao').click(function() {
       $('#atendimentoTable').hide();
       $('#medicinaTable').hide();
@@ -89,6 +96,7 @@ $(document).ready(function(){
       $('#funcoesTable').show();
     });
 
+    // Manipulação das telas dentro do NavTab
     $('#exames').click(function() {
       $('#atendimentoTable').hide();
       $('#medicinaTable').hide();
@@ -102,6 +110,7 @@ $(document).ready(function(){
       $('#examesTable').show();
     });
 
+    // Manipulação das telas dentro do NavTab
     $('#riscoAgentes').click(function() {
       $('#atendimentoTable').hide();
       $('#medicinaTable').hide();
@@ -115,6 +124,7 @@ $(document).ready(function(){
       $('#riscoAgentesTable').show();   
     });
 
+    // Manipulação das telas dentro do NavTab
     $('#credenciados').click(function() {
       $('#atendimentoTable').hide();
       $('#medicinaTable').hide();
@@ -127,6 +137,8 @@ $(document).ready(function(){
       $('#riscoAgentesTable').hide(); 
       $('#credenciadosTable').show();  
     });
+
+    // Manipulação das telas dentro do NavTab
 
     $('#seg').click(function() {
       $('#atendimentoTable').hide();
@@ -141,6 +153,7 @@ $(document).ready(function(){
       $('#segTable').show();
     });
 
+    // Manipulação das telas dentro do NavTab
     $('#med').click(function() {
       $('#atendimentoTable').hide();
       $('#cadastroMenuInicial').hide();
@@ -154,6 +167,7 @@ $(document).ready(function(){
       $('#medicinaTable').show();
     });
 
+    // Manipulação das telas dentro do NavTab
     $('#atendimento').click(function() {
       $('#cadastroMenuInicial').hide();
       $('#cadastroMenu').hide();
