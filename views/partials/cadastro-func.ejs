@@ -1,0 +1,180 @@
+<!--Cards do Cadastro-->
+<div id="cadastroFuncForm" class="row justify-content-center">
+    <div class="col-2">
+        <div class="card card-cascade narrower my-5 mr-0 ml-1 w-100">
+            <div class="view view-cascade gradient-card-header blue-gradient">
+                <h4 class="card-header-title">Editar Foto</h4>
+            </div>
+            <div class="card-body text-center">
+                <div class="mb-3 text-center">
+
+                    <img src="images/perfil.jpg" class="img-fluid z-depth-1 rounded-circle" alt="Responsive image">
+            
+                </div>
+                <button type="button" class="btn btn-rounded btn-primary">Editar Foto</button>      
+            </div>
+        </div>
+    </div>
+    <div class="col-7">
+        <div class="card card-cascade narrower my-5 mx-0 w-100">
+            <div class="view view-cascade gradient-card-header blue-gradient">
+                <h4 class="card-header-title">Cadastro de Funcionário</h4>
+            </div> 
+            <div class="card-body">  
+                <form id="cadastroForm">
+                    <h4 class="formTitle">Dados Pessoais</h4>
+                    <!-- Row do CPF , RG, Data de nascimento, idade  e sexo -->
+                    <div class="form-row">
+                        <div class="col-3">
+                            <div class="md-form">
+                                <input type="text" id="cpfFunc" class="form-control">
+                                <label for="cpfFunc" >CPF</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="md-form">
+                                <input type="text" id="rgFunc" class="form-control">
+                                <label for="rgFunc" >RG</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="md-form">
+                                <input type="text" id="dataNascFunc" class="form-control">
+                                <label for="dataNascFunc" >Data de Nascimento</label>
+                            </div>
+                        </div>
+                        <div id="colunaIdade" style="height:52px;">
+                            <div class="md-form form-group">
+                                <input type="text" id="idadeForm" class="form-control">
+                                <label id="idadeLabel" for="idadeForm">Idade(anos)</label>
+                            </div>
+                        </div>
+                        <div class="justify-content-center ml-3" id="colunaSexo" style="height:52px;">
+                            <div class="form justify-content-center">
+                                <label class="ml-5 container: 'body'" data-toggle="tooltip" data-placement="top" title="Campo obrigatório" id="sexoForm" for="sexoForm">Sexo: </label>
+                                <br>
+                                <div class="form-inline">
+                                <div class="form-check">
+                                    <input class="form-check-input" name="group100" type="radio" id="radio100">
+                                    <label class="form-check-label" for="radio100">masculino</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" name="group100" type="radio" id="radio101" checked>
+                                    <label class="form-check-label" for="radio101">feminino</label>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row do Nome -->
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="md-form">
+                                <input type="text" id="nomeFunc" class="form-control">
+                                <label for="nomeFunc" >Nome</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row do Email -->
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="md-form">
+                                <input type="text" id="emailFunc" class="form-control">
+                                <label for="emailFunc" >E-mail</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="md-form">
+                                <input type="text" id="email2Func" class="form-control">
+                                <label for="email2Func" >E-mail Secudário</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row do Telefone -->
+                    <div class="form-row">
+                        <div class="col-3">
+                            <div class="md-form">
+                                <input type="text" id="telFunc" class="form-control">
+                                <label for="telFunc" >Telefone 1</label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="md-form">
+                                <input type="text" id="tel2Func" class="form-control">
+                                <label for="tel2Func" >Telefone 2</label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="md-form">
+                                <input type="text" id="celFunc" class="form-control">
+                                <label for="celFunc" >Celular 1</label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="md-form">
+                                <input type="text" id="cel2Func" class="form-control">
+                                <label for="cel2Func" >Celular 2</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="w-100">
+                    <!-- Seção do Endereço -->
+                    <h4 class="formTitle mt-5">Endereço</h4>
+                    <!-- Row do CEP -->
+                    <div class="form-row">
+                        <div class="col-3">
+                            <div class="md-form">
+                                <input type="text" id="cepFunc" class="form-control">
+                                <label for="cepFunc" >CEP</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row do Logradouro, Número e Complemento -->
+                    <div class="form-row">
+                        <div class="col-7">
+                            <div class="md-form">
+                                <input type="text" id="logradouroFunc" class="form-control">
+                                <label for="logradouroFunc" >Logradouro</label>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="md-form">
+                                <input type="text" id="numFunc" class="form-control">
+                                <label for="numFunc" >Número</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="md-form">
+                                <input type="text" id="complFunc" class="form-control">
+                                <label for="complFunc" >Complemento</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row do Bairro, CIdade e Estado -->
+                    <div class="form-row">
+                        <div class="col-5">
+                            <div class="md-form">
+                                <input type="text" id="bairroFunc" class="form-control">
+                                <label for="bairroFunc" >Bairro</label>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="md-form">
+                                <input type="text" id="cidFunc" class="form-control">
+                                <label for="cidFunc" >Cidade</label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="md-form">
+                                <input type="text" id="estFunc" class="form-control">
+                                <label for="estFunc" >Estado</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botão Salvar -->
+                    <button type="button" class="btn btn-rounded btn-primary float-right mb-3 mr-1"><i class="fa fa-floppy-o pr-2" aria-hidden="true"></i>Salvar</button>      
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

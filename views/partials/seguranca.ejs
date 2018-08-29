@@ -97,9 +97,39 @@
             </table>
             <!--Table-->
             <!-- Botão para acrescentar documento -->
-            <button type="button" class="btn btn-rounded btn-primary float-right mb-3 mr-4"><i class="fa fa-plus pr-2" aria-hidden="true"></i>Documento</button>
+            <button type="button" class="btn btn-rounded btn-primary float-right mb-3 mr-4" 
+                    data-toggle="modal" data-target="#modalSeg"><i class="fa fa-plus pr-2" aria-hidden="true"></i>Documento</button>
         </div>
 
     </div>
 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalSeg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Adicionar Documento de Segurança</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3 pb-0">
+                <div class="md-form">
+                    <input type="text" id="addSetorModal" class="form-control validate">
+                    <label for="addExamModal">Setor</label>
+                </div>
+            </div>
+            <div class="modal-body mx-3 pt-0">
+                <div class="md-form mb-5">
+                    <input type="text" id="addFuncaoModal" class="form-control validate">
+                    <label for="addProcModal">Função</label>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-rounded btn-primary" data-dismiss="modal">Salvar</button>
+            </div>
+        </div>
+    </div>
 </div>

@@ -196,6 +196,11 @@ li a {
    margin-left: 82px !important;
  }
 
+ #sexoFormCred {
+  color: #757575;
+  margin-left: 82px !important;
+}
+
  .form-check-label {
    padding-left: 24px !important;
    margin-left: 5px;
@@ -209,6 +214,14 @@ li a {
  #colunaIdade {
    width: 100px !important;
  }
+
+ #colunaSexoCred {
+  width: 200px !important;
+}
+
+#colunaIdadeCred {
+  width: 100px !important;
+}
 
  input {
    padding-bottom: 2px !important;

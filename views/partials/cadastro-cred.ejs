@@ -1,0 +1,290 @@
+<div id="cadCredForm" class="card card-cascade narrower mt-5">
+    <div class="view view-cascade gradient-card-header blue-gradient">
+        <h4 class="card-header-title">Cadastro de Credenciados</h4>
+    </div> 
+    <div class="card-body">  
+        <form id="cadastroForm">
+            <!--Row do Select Pessoa Fisica x Juridica-->
+            <div class="form-row">    
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="pessoaFisica" name="inlineMaterialRadiosExample" checked>
+                    <label class="form-check-label" for="pessoaFisica">Pessoa Física</label>
+                </div>
+                    
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="pessoaJurid" name="inlineMaterialRadiosExample">
+                    <label class="form-check-label" for="pessoaJurid">Pessoa Jurídica</label>
+                </div>
+            </div>
+            <!-- Row do CPF , RG, Data de nascimento, idade  e sexo -->
+            <div id="pessoaFisicaRow1" class="form-row">
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="cpfCred" class="form-control">
+                        <label for="cpfCred" >CPF</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="md-form">
+                        <input type="text" id="rgCred" class="form-control">
+                        <label for="rgCred" >RG</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="md-form">
+                        <input type="text" id="dataNascCred" class="form-control">
+                        <label for="dataNascCred" >Data de Nascimento</label>
+                    </div>
+                </div>
+                <div id="colunaIdade" style="height:52px;">
+                    <div class="md-form form-group">
+                        <input type="text" id="idadeFormCred" class="form-control">
+                        <label id="idadeLabelCred" for="idadeFormCred">Idade(anos)</label>
+                    </div>
+                </div>
+                <div class="justify-content-center ml-3" id="colunaSexoCred" style="height:52px;">
+                    <div class="form justify-content-center">
+                        <label class="ml-5 container: 'body'" data-toggle="tooltip" data-placement="top" title="Campo obrigatório" id="sexoFormCred" for="sexoFormCred">Sexo: </label>
+                        <br>
+                        <div class="form-inline">
+                        <div class="form-check">
+                            <input class="form-check-input" name="group1000" type="radio" id="radio1000">
+                            <label class="form-check-label" for="radio1000">masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="group1000" type="radio" id="radio1001" checked>
+                            <label class="form-check-label" for="radio1001">feminino</label>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row do CNPJ , IE, , CNAE  e DUNS -->
+            <div id="pessoaJuridRow1" class="form-row">
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="cnpjCred" class="form-control">
+                        <label for="cnpjCred" >CNPJ</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="md-form">
+                        <input type="text" id="ieCred" class="form-control">
+                        <label for="ieCred" >I.E.</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="md-form">
+                        <input type="text" id="cnaeCred" class="form-control">
+                        <label for="cnaeCred" >CNAE</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="md-form">
+                        <input type="text" id="dunsCred" class="form-control">
+                        <label for="dunsCred" >D-U-N-S</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Row do Nome -->
+            <div id="pessoaFisicaRow2" class="form-row">
+                <div class="col-6">
+                    <div class="md-form">
+                        <input type="text" id="nomeCred" class="form-control">
+                        <label for="nomeCred" >Nome</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Row do Nome Fatansia e Razao Social-->
+            <div id="pessoaJuridRow2" class="form-row">
+                    <div class="col">
+                        <div class="md-form">
+                            <input type="text" id="razaoSocialCred" class="form-control">
+                            <label for="razaoSocialCred" >Razão Social</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="md-form">
+                            <input type="text" id="nomeFantasiaCred" class="form-control">
+                            <label for="nomeFantasiaCred" >Nome Fantasia</label>
+                        </div>
+                    </div>
+                </div>
+            <!-- Row do Email -->
+            <div class="form-row">
+                <div class="col">
+                    <div class="md-form">
+                        <input type="text" id="emailCred" class="form-control">
+                        <label for="emailCred" >E-mail</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="md-form">
+                        <input type="text" id="email2Cred" class="form-control">
+                        <label for="email2Cred" >E-mail Secudário</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Row do Telefone -->
+            <div class="form-row">
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="telCred" class="form-control">
+                        <label for="telCred" >Telefone 1</label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="tel2Cred" class="form-control">
+                        <label for="tel2Cred" >Telefone 2</label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="celCred" class="form-control">
+                        <label for="celCred" >Celular 1</label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="cel2Cred" class="form-control">
+                        <label for="cel2Cred" >Celular 2</label>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-100">
+            <!-- Seção do Dados de Pagamento -->
+            <h4 class="formTitle mt-5">Dados de Pagamento</h4>
+            <!-- Row do forma de pagamento e tipo de credenciado -->
+            <div class="form-row mt-5">
+                <div class="col-3">
+                    <select class="mdb-select">
+                        <option value="" disabled selected>Forma de Pagamento</option>
+                        <option value="1">Boleto</option>
+                        <option value="2">Dinheiro</option>
+                        <option value="3">Transferência</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <select class="mdb-select">
+                        <option value="" disabled selected>Tipo de Credenciado</option>
+                        <option value="1">Clínica</option>
+                        <option value="2">laboratório</option>
+                        <option value="3">Médico</option>
+                        <option value="4">Enfermagem</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Row do Dia do Pagamento e Cond de Pagamento -->
+            <div class="form-row">    
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="diaPag" class="form-control">
+                        <label for="diaPag" >Dia do Pagamento (1-30)</label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="condPag" class="form-control">
+                        <label for="condPag" >Condição de Pagamento (dias)</label>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-100">
+            <!-- Seção do Dados Bancários -->
+            <h4 class="formTitle mt-5">Dados Bancários</h4>
+            <!-- Row do Favorecido -->
+            <div class="form-row">
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="favorecido" class="form-control">
+                        <label for="favorecido" >Favorecido</label>
+                    </div>
+                </div>
+            </div>
+            <!--Row do Banco, Ag, Conta e Tipo de Conta-->
+            <div class="form-row">
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="banco" class="form-control">
+                        <label for="banco" >Banco</label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="agencia" class="form-control">
+                        <label for="agencia" >Agência</label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="conta" class="form-control">
+                        <label for="conta" >Conta</label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="tipoConta" class="form-control">
+                        <label for="tipoConta" >Tipo de Conta</label>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-100">
+            <!-- Seção do Endereço -->
+            <h4 class="formTitle mt-5">Endereço</h4>
+            <!-- Row do CEP -->
+            <div class="form-row">
+                <div class="col-3">
+                    <div class="md-form">
+                        <input type="text" id="cepCred" class="form-control">
+                        <label for="cepCred" >CEP</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Row do Logradouro, Número e Complemento -->
+            <div class="form-row">
+                <div class="col-7">
+                    <div class="md-form">
+                        <input type="text" id="logradouroCred" class="form-control">
+                        <label for="logradouroCred" >Logradouro</label>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="md-form">
+                        <input type="text" id="numCred" class="form-control">
+                        <label for="numCred" >Número</label>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="md-form">
+                        <input type="text" id="complCred" class="form-control">
+                        <label for="complCred" >Complemento</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Row do Bairro, CIdade e Estado -->
+            <div class="form-row">
+                <div class="col-5">
+                    <div class="md-form">
+                        <input type="text" id="bairroCred" class="form-control">
+                        <label for="bairroCred" >Bairro</label>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="md-form">
+                        <input type="text" id="cidCred" class="form-control">
+                        <label for="cidCred" >Cidade</label>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="md-form">
+                        <input type="text" id="estCred" class="form-control">
+                        <label for="estCred" >Estado</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Botão Salvar -->
+            <button type="button" class="btn btn-rounded btn-primary float-right mb-3 mr-1"><i class="fa fa-floppy-o pr-2" aria-hidden="true"></i>Salvar</button>      
+        </form>
+    </div>
+</div>

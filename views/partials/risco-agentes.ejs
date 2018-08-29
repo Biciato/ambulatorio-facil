@@ -97,9 +97,39 @@
             </table>
             <!--Table-->
             <!-- Botão para acrescentar agentes -->
-            <button type="button" class="btn btn-rounded btn-primary float-right mb-3 mr-4"><i class="fa fa-plus pr-2" aria-hidden="true"></i>Agente</button>
+            <button type="button" class="btn btn-rounded btn-primary float-right mb-3 mr-4" 
+                    data-toggle="modal" data-target="#modalRiscos"><i class="fa fa-plus pr-2" aria-hidden="true"></i>Agente</button>
         </div>
 
     </div>
 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalRiscos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Adicionar Agente de Risco</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3 pb-0">
+                <div class="md-form">
+                    <input type="text" id="addDescRiscoModal" class="form-control validate">
+                    <label for="addExamModal">Descrição</label>
+                </div>
+            </div>
+            <div class="modal-body mx-3 pt-0">
+                <div class="md-form mb-5">
+                    <input type="text" id="addGrpRiscoModal" class="form-control validate">
+                    <label for="addProcModal">Grupo de Riscos</label>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-rounded btn-primary" data-dismiss="modal">Salvar</button>
+            </div>
+        </div>
+    </div>
 </div>
